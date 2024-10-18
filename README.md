@@ -5,7 +5,7 @@ Fazendo o nano course da Fiap de Código de Alta Performance
 <p>Listas lineares é chamado também de ordenação.</p>
 
 <h3>Representação de informação em Sistemas computacionais</h3>
-<p>Para explicar esta parte usaremos como exemplo a plaicação de previsão do tempo:</p>
+<p>Para explicar esta parte usaremos como exemplo a aplicação de previsão do tempo:</p>
 <ul>
   <li>1º Partir dos calculos, que podem ser efeutados sem o uso de computadores, fazer a modelagem do problema para gerar algoritmo</li>
   <li>2º Obter medidas do mundo real como pressão, temperatura, umidade do ar etc. Para serem usados no processamento afim de obter informações sobre a probabilidade. Devemos escolher um tipo de dado mais adequado para representá-lo.</li>
@@ -37,5 +37,44 @@ Por exemplo: Valores que representam quantidades contáveis de objetos, operaç�
 <p>Uma lista linear é uma estrutura de dados que além de armazenar vários valores de elementos, impõe que a posição de cada elemento deve respeitar algum tipo de ordem. A característica princiapl de uma lista linear é o sentido de ordem unidirecional que a compôem, o critério para ordenação é bastante genérico, são definidos em função do problema</p>
 <p>Exemplo de operações:</p>
 <ul>
-  <li></li>
+  <li>Ter acesso a um elemento qualquer da lista(acesso)</li>
+  <li>Inserir um elementos em uma posição específica da lista(inserção)</li>
+  <li>Remover um elemento em uma posição específica da lista(remoção)</li>
+  <li>Combinar duas listas em apenas uma</li>
+  <li>Dividir uma lista em duas</li>
+  <li>Determinar o total de elementos</li>
 </ul>
+
+<p>Difinindo casos especiais que são encontrados com muita frequência na modelagem de problemas, esses casos geram as seguintes listas lineares especiais: pilha e fila</p>
+
+<h4>Lista linear especial: Pilha</h4>
+<p>Uma pilha (stack) é uma lista em que as operações de inserção e de remoção são efetuadas apenas em uma extremidade denominada topo da fila. Estruturas desse tipo são conhecidas como LIFO (last in first out</p>
+
+<h4>Lista linear especial: Fila</h4>
+<p>É uma lista linear na qual a operação de inserção é feita em uma extremidade denominada final da fila e remoção é efetuada apenas no início da fila, estruturas desse tipo são conhecidas como FIFO(first in first out) </p>
+
+<h4>Como construir listas lineares em programas</h4>
+<p>Existem duas formas:</p>
+<p>1º Implementação estática: É usado vetor com tamanho fixo para armazenar os elementos da lista, a ordenação é garantida pela posição do elemento dentro do vetor</p>
+
+<p>Listas lineares Estáticas</p>
+<ul>
+  <li>Uso de Vetores: As listas são implementadas utilizando um vetor com um tamanho fixo.</li>
+  <li>Limitações:O tamanho da lista precisa ser definido no momento da criação, limitando a flexibilidade.
+Para inserir ou remover elementos, pode ser necessário realocar o vetor, aumentando a complexidade e o custo das operações.</li>
+  <li>Vantagens:Acesso rápido aos elementos via índices.</li>
+</ul>
+
+
+<p>2ºImplementação dinâmica: Deve-se criar espaço na memória para armazenar cada elemento da lista, conforma a aplicação, isso requer mais um elemento, é chamado de alocação dinâmica, aloca(reserva local) espaço na memória para um dado enquanto o programa está sendo executado(dinamicamente)</p>
+<p>Listas Lineares Dinâmicas</p>
+<ul>
+  <li>Alocação de Memória: A memória é alocada conforme necessário, O que permite que a lista cresça ou diminua livremente.</li>
+
+  <li>Estrutura Encadeada: Cada elemento (nó) contém o dado e um ponteiro para o próximo nó, permitindo que os elementos não estejam armazenados em locais contíguos na memória.</li>
+
+  <li>Vantagens:Maior flexibilidade e eficiência na utilização de memória.
+Facilita a inserção e remoção de elementos sem a necessidade de realocação.</li>
+</ul>
+
+<h3>Lista linear encadeada</h3>
